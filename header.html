@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="product.css">
+      <link rel="icon" type="image/png" href="./resources/icon2.jpg">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+      <!-- DESKTOP HEADER -->
+  <header class="header">
+    <div class="header-inner">
+
+      <!-- Logo -->
+      <a href="#" class="logo">
+        <span class="icon" style="font-size:2.25rem">shopping_bag</span>
+        <h2 class="logo-text">KShop</h2>
+      </a>
+
+      <!-- Search bar -->
+      <div class="search-box">
+        <div class="search-input-wrap">
+          <div class="search-icon-left"><span class="icon">search</span></div>
+          <input class="search-input" id="desktopSearchInput"placeholder="Search for products, brands and more..."type="text" autocomplete="off" />
+          <div id="suggestions-box"></div>
+        </div>
+      </div>
+
+      <!-- Right side buttons -->
+      <div class="header-buttons">
+        <button class="header-btn" id="headerCartBtn">
+          <span class="icon">shopping_cart</span>
+          <span class="header-btn-label">Cart</span>
+          <span class="cart-bubble" id="headerCartBubble">0</span>
+        </button>
+        <button class="header-btn">
+          <span class="icon">package_2</span>
+          <span class="header-btn-label">Orders</span>
+        </button>
+        <!-- profileDropdown -->
+<div class="profile-container">
+
+  <button class="header-btn profile-btn" id="profileBtn">
+    <span class="icon">person</span>
+    <span class="header-btn-label">Profile</span>
+  </button>
+
+  <div class="profile-dropdown" id="profileDropdown">
+
+    <button id="loginBtn">
+      <span class="icon">login</span> Login
+    </button>
+
+    <button id="signupBtn">
+      <span class="icon">person_add</span> Signup
+    </button>
+
+    <button id="logoutBtn">
+      <span class="icon">logout</span> Logout
+    </button>
+
+  </div>
+
+</div>
+        <div class="header-avatar">
+          <img class="avatar-img" alt="User"
+               src="./resources/pngwing.com.png" />
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+ 
+</body>
+</html>

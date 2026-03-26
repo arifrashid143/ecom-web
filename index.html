@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>online shoping site for electrinics groceries fashion</title>
+  <link rel="icon" type="image/png" href="./resources/icon2.jpg">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div class="page">
+
+  <!-- DESKTOP HEADER -->
+  <header class="header">
+    <div class="header-inner">
+
+      <!-- Logo -->
+      <a href="#" class="logo">
+        <span class="icon" style="font-size:2.25rem">shopping_bag</span>
+        <h2 class="logo-text">KShop</h2>
+      </a>
+
+      <!-- Search bar -->
+      <div class="search-box">
+        <div class="search-input-wrap">
+          <div class="search-icon-left"><span class="icon">search</span></div>
+          <input class="search-input" id="desktopSearchInput"placeholder="Search for products, brands and more..."type="text" autocomplete="off" />
+          <div id="suggestions-box"></div>
+        </div>
+      </div>
+
+      <!-- Right side buttons -->
+      <div class="header-buttons">
+        <button class="header-btn" id="headerCartBtn">
+          <span class="icon">shopping_cart</span>
+          <span class="header-btn-label">Cart</span>
+          <span class="cart-bubble" id="headerCartBubble">0</span>
+        </button>
+        <button class="header-btn">
+          <span class="icon">package_2</span>
+          <span class="header-btn-label">Orders</span>
+        </button>
+        <!-- profileDropdown -->
+<div class="profile-container">
+
+  <button class="header-btn profile-btn" id="profileBtn">
+    <span class="icon">person</span>
+    <span class="header-btn-label">Profile</span>
+  </button>
+
+  <div class="profile-dropdown" id="profileDropdown">
+
+    <button id="loginBtn">
+      <span class="icon">login</span> Login
+    </button>
+
+    <button id="signupBtn">
+      <span class="icon">person_add</span> Signup
+    </button>
+
+    <button id="logoutBtn">
+      <span class="icon">logout</span> Logout
+    </button>
+
+  </div>
+
+</div>
+        <div class="header-avatar">
+          <img class="avatar-img" alt="User"src="./resources/pngwing.com.png" />
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- CATEGORY NAV BAR -->
+  <nav class="cat-nav">
+    <div class="cat-nav-inner">
+      <div class="cat-nav-list">
+        <a class="cat-nav-item category-nav__item--active" href="#section-all" data-slug="all">
+          <span class="icon">apps</span>
+          <span class="cat-nav-label">All</span>
+        </a>
+        <a class="cat-nav-item" href="#section-smartphones" data-slug="smartphones" aria-current="page">
+          <span class="icon-fill">smartphone</span>
+          <span class="cat-nav-label">Smartphones</span>
+        </a>
+        <a class="cat-nav-item" href="#section-laptops" data-slug="laptops">
+          <span class="icon">laptop</span>
+          <span class="cat-nav-label">Laptops</span>
+        </a>
+        <a class="cat-nav-item" href="#section-fragrances" data-slug="fragrances">
+          <span class="icon">auto_fix_high</span>
+          <span class="cat-nav-label">Beauty</span>
+        </a>
+        <a class="cat-nav-item" href="#section-furniture" data-slug="furniture">
+          <span class="icon">chair</span>
+          <span class="cat-nav-label">Furniture</span>
+        </a>
+        <a class="cat-nav-item" href="#section-tops" data-slug="mens-shirts">
+          <span class="icon">apparel</span>
+          <span class="cat-nav-label">Clothes</span>
+        </a>
+        <a class="cat-nav-item" href="#section-mens-shoes" data-slug="mens-shoes">
+          <span class="icon">steps</span>
+          <span class="cat-nav-label">Footwear</span>
+        </a>
+        <a class="cat-nav-item" href="#section-groceries" data-slug="groceries">
+          <span class="icon">shopping_basket</span>
+          <span class="cat-nav-label">Grocery</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+
+    <!-- ── Hero Slider ── -->
+    <section class="hero-wrap">
+      <div class="hero-outer" id="heroOuter">
+
+        <!-- The track slides left/right -->
+        <div class="hero-track" id="heroTrack">
+
+          <!-- SLIDE 1 — Laptops -->
+          <div class="hero-slide active">
+            <div class="hero-bg-wrap">
+              <div class="hero-overlay" style="background:linear-gradient(to right,rgba(8,12,28,0.93),rgba(8,12,28,0.55),transparent)"></div>
+              <img class="hero-bg-img" src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=1400&q=80" alt="Laptop" />
+            </div>
+            <div class="hero-text">
+              <div class="hero-tag"><span class="icon" style="font-size:.875rem">laptop</span> Up to 30% OFF</div>
+              <h1 class="hero-title">Power Meets<br><span class="hero-title-color">Portability.</span></h1>
+              <p class="hero-desc">Ultra-slim laptops built for creators, coders and professionals.</p>
+              <div class="hero-btns">
+                <button class="btn btn-orange" data-goto="laptops">Shop Laptops</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 2 — Clothes -->
+          <div class="hero-slide">
+            <div class="hero-bg-wrap">
+              <div class="hero-overlay" style="background:linear-gradient(to right,rgba(10,20,40,0.92),rgba(10,20,40,0.5),transparent)"></div>
+              <img class="hero-bg-img" src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1400&q=80" alt="Fashion" />
+            </div>
+            <div class="hero-text">
+              <div class="hero-tag"><span class="icon" style="font-size:.875rem">local_offer</span> 40% OFF</div>
+              <h1 class="hero-title">Season's<br><span class="hero-title-color">Best Fashion.</span></h1>
+              <p class="hero-desc">Explore the latest trends in men's and women's fashion.</p>
+              <div class="hero-btns">
+                <button class="btn btn-orange" data-goto="tops">Shop Clothes</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 3 — Grocery -->
+          <div class="hero-slide">
+            <div class="hero-bg-wrap">
+              <div class="hero-overlay" style="background:linear-gradient(to right,rgba(10,30,10,0.92),rgba(10,30,10,0.5),transparent)"></div>
+              <img class="hero-bg-img" src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=1400&q=80" alt="Grocery" />
+            </div>
+            <div class="hero-text">
+              <div class="hero-tag"><span class="icon" style="font-size:.875rem">eco</span> Fresh &amp; Organic</div>
+              <h1 class="hero-title">Farm Fresh<br><span class="hero-title-color">Delivered Daily.</span></h1>
+              <p class="hero-desc">Order fresh fruits, vegetables and pantry essentials.</p>
+              <div class="hero-btns">
+                <button class="btn btn-orange" data-goto="groceries">Shop Grocery</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 4 — Furniture -->
+          <div class="hero-slide">
+            <div class="hero-bg-wrap">
+              <div class="hero-overlay" style="background:linear-gradient(to right,rgba(30,20,10,0.92),rgba(30,20,10,0.5),transparent)"></div>
+              <img class="hero-bg-img" src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1400&q=80" alt="Furniture" />
+            </div>
+            <div class="hero-text">
+              <div class="hero-tag"><span class="icon" style="font-size:.875rem">weekend</span> Home Makeover</div>
+              <h1 class="hero-title">Design Your<br><span class="hero-title-color">Dream Space.</span></h1>
+              <p class="hero-desc">Handpicked furniture for every room. Save up to 35%.</p>
+              <div class="hero-btns">
+                <button class="btn btn-orange" data-goto="furniture">Shop Furniture</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 5 — Smartphones -->
+          <div class="hero-slide">
+            <div class="hero-bg-wrap">
+              <div class="hero-overlay" style="background:linear-gradient(to right,rgba(5,10,30,0.92),rgba(5,10,30,0.5),transparent)"></div>
+              <img class="hero-bg-img" src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=1400&q=80" alt="Smartphones" />
+            </div>
+            <div class="hero-text">
+              <div class="hero-tag"><span class="icon" style="font-size:.875rem">smartphone</span> Top Brands</div>
+              <h1 class="hero-title">Flagship Phones<br><span class="hero-title-color">Epic Savings.</span></h1>
+              <p class="hero-desc">Apple, Samsung, OnePlus and more. Zero-cost EMI available.</p>
+              <div class="hero-btns">
+                <button class="btn btn-orange" data-goto="smartphones">Shop Smartphones</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 6 — Footwear -->
+          <div class="hero-slide">
+            <div class="hero-bg-wrap">
+              <div class="hero-overlay" style="background:linear-gradient(to right,rgba(20,10,5,0.92),rgba(20,10,5,0.5),transparent)"></div>
+              <img class="hero-bg-img" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1400&q=80" alt="Shoes" />
+            </div>
+            <div class="hero-text">
+              <div class="hero-tag"><span class="icon" style="font-size:.875rem">steps</span> New Drops</div>
+              <h1 class="hero-title">Step Into<br><span class="hero-title-color">Bold Style.</span></h1>
+              <p class="hero-desc">Nike, Adidas, Puma and more. Free shipping on all footwear.</p>
+              <div class="hero-btns">
+                <button class="btn btn-orange" data-goto="mens-shoes">Shop Footwear</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 7 — Beauty -->
+          <div class="hero-slide">
+            <div class="hero-bg-wrap">
+              <div class="hero-overlay" style="background:linear-gradient(to right,rgba(30,10,20,0.92),rgba(30,10,20,0.5),transparent)"></div>
+              <img class="hero-bg-img" src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=1400&q=80" alt="Beauty" />
+            </div>
+            <div class="hero-text">
+              <div class="hero-tag"><span class="icon" style="font-size:.875rem">auto_fix_high</span> Beauty Sale</div>
+              <h1 class="hero-title">Glow Up with<br><span class="hero-title-color">Premium Beauty.</span></h1>
+              <p class="hero-desc">Top skincare, makeup, and wellness brands at unbeatable prices.</p>
+              <div class="hero-btns">
+                <button class="btn btn-orange" data-goto="fragrances">Shop Beauty</button>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /hero-track -->
+
+        <button class="hero-arrow left"  id="heroPrevBtn"><span class="icon">chevron_left</span></button>
+        <button class="hero-arrow right" id="heroNextBtn"><span class="icon">chevron_right</span></button>
+        <div class="hero-dots" id="heroDots"></div>
+        <div class="hero-progress" id="heroProgressBar"></div>
+
+      </div><!-- /hero-outer -->
+    </section>
+    
+    <!-- product container -->
+    <section id="products-section">
+      <h2 id="section-title">All Products</h2>
+      <div id="products-container"></div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="icon">shopping_bag</span>
+          <span class="footer-logo-name">KShop</span>
+        </div>
+        <p class="footer-tagline">Your one-stop destination for premium electronics, fashion, and lifestyle products. Quality guaranteed since 2020.</p>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Shop Categories</h4>
+        <ul class="footer-links">
+          <li><a class="footer-link" href="#">Electronics &amp; Gadgets</a></li>
+          <li><a class="footer-link" href="#">Fashion &amp; Apparel</a></li>
+          <li><a class="footer-link" href="#">Home &amp; Furniture</a></li>
+          <li><a class="footer-link" href="#">Beauty &amp; Personal Care</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Customer Support</h4>
+        <ul class="footer-links">
+          <li><a class="footer-link" href="#">Help Center</a></li>
+          <li><a class="footer-link" href="#">Track Your Order</a></li>
+          <li><a class="footer-link" href="#">Returns &amp; Refunds</a></li>
+          <li><a class="footer-link" href="#">Shipping Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Join Our Newsletter</h4>
+        <p class="newsletter-note">Stay updated with latest deals and releases.</p>
+        <div class="newsletter-form">
+          <input class="newsletter-input" placeholder="Email address" type="email" />
+          <button class="newsletter-btn">Join</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 KShop E-Commerce. All rights reserved by Arif.</p>
+      <nav class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Settings</a>
+      </nav>
+    </div>
+  </footer>
+  
+  <!-- login-form -->
+<div class="auth-modal" id="authModal">
+
+  <div class="auth-card" id="authCard">
+
+    <button class="close-btn" id="closeAuth">&times;</button>
+
+    <h2 id="authTitle">Login</h2>
+
+    <div class="input-field">
+      <input type="text" id="username" required>
+      <label>Username</label>
+    </div>
+
+    <div class="input-field">
+      <input type="password" id="password" required>
+      <label>Password</label>
+    </div>
+
+    <button id="submitAuth" class="submit-btn">Continue</button>
+
+    <p class="switch-text">
+      Don't have an account?
+      <span id="switchSignup">Sign up</span>
+    </p>
+
+  </div>
+
+</div>
+
+
+<!-- cart drawer -->
+ <div class="cart-drawer" id="cartDrawer">
+
+  <div class="cart-header">
+    <h2>🛒 My Cart</h2>
+    <button id="closeCart">✕</button>
+  </div>
+
+  <div class="cart-items" id="cartItems"></div>
+
+  <div class="cart-footer">
+    <p>Total: $<span id="cartTotal">0</span></p>
+    <button class="checkout">Checkout</button>
+  </div>
+
+</div>
+
+  <script src="index.js"></script>
+  <script src="product.js"></script>
+
+</body>
+</html>
